@@ -1,8 +1,9 @@
 {
-    "name": "greenterycam/core",
+    "name": "greenterfin/core",
     "description": "Greenter Core",
     "keywords": ["sunat", "greenter", "facturacion electronica"],
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Giancarlos Salas",
@@ -11,9 +12,13 @@
         {
             "name": "Yerson Y. Campos De la cruz",
             "email": "ycamposde@gmail.com"
+        },
+        {
+            "name": "Financontcorp",
+            "email": "appmanager@finacontcorp.com"
         }
     ],
-    "homepage": "https://github.com/ycamposde/greenter-core",
+    "homepage": "https://github.com/finacontcorp/greenter-core",
     "type": "library",
     "require": {
 		    "php": ">=5.6"
