@@ -28,6 +28,10 @@ class DetailAttribute
      */
     private $value;
     /**
+     * @var string
+     */
+    private $cantidad;
+    /**
      * @var DateTime
      */
     private $fecInicio;
@@ -86,6 +90,22 @@ class DetailAttribute
     {
         $this->value = $value;
         return $this;
+    }
+    /**
+     * @return string
+     */
+    public function getCantidad()
+    {
+      return $this->cantidad;
+    }
+    /**
+     * @param string $cantidad
+     * @return DetailAttribute
+     */
+    public function setCantidad($cantidad)
+    {
+      $this->cantidad = $cantidad;
+      return $this;
     }
     /**
      * @return DateTime
