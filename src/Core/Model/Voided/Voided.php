@@ -22,7 +22,7 @@ class Voided implements DocumentInterface
     protected $correlativo;
 
     /**
-     * Fecha de generación de los documentos a dar baja.
+     * Fecha de generación de los documentos a dar (baja).
      *
      * @var \DateTimeInterface
      */
