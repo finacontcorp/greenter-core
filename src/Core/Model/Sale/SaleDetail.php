@@ -60,6 +60,20 @@ class SaleDetail
     private $masDetalle;
 
     /**
+     * Unidad Medida del Producto.
+     *
+     * @var string
+     */
+    private $unidadMedida;
+
+    /**
+     * Almacen del Producto.
+     *
+     * @var string
+     */
+    private $almacen;
+
+    /**
      * Monto del valor unitario (PrecioUnitario SIN IGV).
      *
      * @var float
@@ -310,6 +324,42 @@ class SaleDetail
     public function setMasDetalle($masDetalle)
     {
       $this->masDetalle = $masDetalle;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUnidadMedida() {
+      return $this->unidadMedida;
+    }
+
+    /**
+     * @param string $unidadMedida
+     *
+     * @return SaleDetail
+     */
+    public function setUnidadMedida($unidadMedida)
+    {
+      $this->unidadMedida = $unidadMedida;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAlmacen() {
+      return $this->almacen;
+    }
+
+    /**
+     * @param string $almacen
+     *
+     * @return SaleDetail
+     */
+    public function setAlmacen($almacen)
+    {
+      $this->almacen = $almacen;
       return $this;
     }
 
