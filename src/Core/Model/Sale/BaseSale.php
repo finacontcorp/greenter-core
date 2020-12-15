@@ -11,6 +11,7 @@ namespace Greenter\Model\Sale;
 use DateTimeInterface;
 use Greenter\Model\Client\Client;
 use Greenter\Model\Company\Company;
+use Greenter\Model\FormaPago\FormaPago;
 use Greenter\Model\DocumentInterface;
 
 /**
@@ -174,6 +175,11 @@ class BaseSale implements DocumentInterface
      * @var string
      */
     protected $compra;
+
+    /**
+     * @var FormaPago
+     */
+    protected $formaPago;
 
     /**
      * @return string
@@ -791,6 +797,26 @@ class BaseSale implements DocumentInterface
     public function setPrecioVentaTotal($precioVentaTotal)
     {
       $this->precioVentaTotal = $precioVentaTotal;
+      return $this;
+    }
+
+    /**
+     * @return FormaPago
+     */
+    public function getFormaPago()
+    {
+      return $this->formaPago;
+    }
+
+    /**
+     * @param FormaPago $formaPago
+     *
+     * @return $this
+     */
+    public function setFormaPago(FormaPago $formaPago)
+    {
+      $this->formaPago = $formaPago;
+
       return $this;
     }
 }
