@@ -25,16 +25,40 @@ class Direction
      */
     private $direccion;
 
+  /**
+   * @var string
+   */
+  private $numRucAsociado;
+
+  /**
+   * @var string
+   */
+  private $codigoEstablecimientoPunto;
+
+  /**
+   * @var string
+   */
+  private $longitud;
+
+  /**
+   * @var string
+   */
+  private $latitud;
+
     /**
      * Direction constructor.
      *
      * @param string $ubigueo
      * @param string $direccion
      */
-    public function __construct($ubigueo, $direccion)
+    public function __construct($ubigueo, $direccion, $numRucAsociado = null, $codigoEstablecimientoPunto = null, $longitud = null, $latitud = null)
     {
         $this->ubigueo = $ubigueo;
         $this->direccion = $direccion;
+        $this->numRucAsociado = $numRucAsociado;
+        $this->codigoEstablecimientoPunto = $codigoEstablecimientoPunto;
+        $this->longitud = $longitud;
+        $this->latitud = $latitud;
     }
 
     /**
@@ -76,4 +100,86 @@ class Direction
 
         return $this;
     }
+
+
+
+  /**
+   * @return string
+   */
+  public function getNumRucAsociado()
+  {
+    return $this->numRucAsociado;
+  }
+
+  /**
+   * @param string $numRucAsociado
+   *
+   * @return Direction
+   */
+  public function setNumRucAsociado($numRucAsociado)
+  {
+    $this->numRucAsociado = $numRucAsociado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getCodigoEstablecimientoPunto()
+  {
+    return $this->codigoEstablecimientoPunto;
+  }
+
+  /**
+   * @param string $codigoEstablecimientoPunto
+   *
+   * @return Direction
+   */
+  public function setCodigoEstablecimientoPunto($codigoEstablecimientoPunto)
+  {
+    $this->codigoEstablecimientoPunto = $codigoEstablecimientoPunto;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getLongitud()
+  {
+    return $this->longitud;
+  }
+
+  /**
+   * @param string $longitud
+   *
+   * @return Direction
+   */
+  public function setLongitud($longitud)
+  {
+    $this->longitud = $longitud;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getLatitud()
+  {
+    return $this->latitud;
+  }
+
+  /**
+   * @param string $latitud
+   *
+   * @return Direction
+   */
+  public function setLatitud($latitud)
+  {
+    $this->latitud = $latitud;
+
+    return $this;
+  }
 }

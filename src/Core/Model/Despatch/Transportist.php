@@ -44,6 +44,27 @@ class Transportist
      */
     private $choferDoc;
 
+  /**
+   * @var string
+   */
+  private $tipoChofer;
+
+  /**
+   * @var string
+   */
+  private $nameChofer;
+
+  /**
+   * @var string
+   */
+  private $apellidoChofer;
+
+  /**
+   * @var string
+   */
+  private $numLicenciaChofer;
+
+
     /**
      * @return string
      */
@@ -163,4 +184,84 @@ class Transportist
 
         return $this;
     }
+
+  /**
+   * @return string
+   */
+  public function getTipoChofer()
+  {
+    return $this->tipoChofer;
+  }
+
+  /**
+   * @param string $tipoChofer
+   *
+   * @return Transportist
+   */
+  public function setTipoChofer($tipoChofer)
+  {
+    $this->tipoChofer = $tipoChofer;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNameChofer()
+  {
+    return $this->nameChofer;
+  }
+
+  /**
+   * @param string $nameChofer
+   *
+   * @return Transportist
+   */
+  public function setNameChofer($nameChofer)
+  {
+    $this->nameChofer = $nameChofer;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getApellidoChofer()
+  {
+    return $this->apellidoChofer;
+  }
+
+  /**
+   * @param string $apellidoChofer
+   *
+   * @return Transportist
+   */
+  public function setApellidoChofer($apellidoChofer)
+  {
+    $this->apellidoChofer = $apellidoChofer;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNumLicenciaChofer()
+  {
+    return $this->numLicenciaChofer;
+  }
+
+  /**
+   * @param string $numLicenciaChofer
+   *
+   * @return Transportist
+   */
+  public function setNumLicenciaChofer($numLicenciaChofer)
+  {
+    $this->numLicenciaChofer = $numLicenciaChofer;
+
+    return $this;
+  }
 }

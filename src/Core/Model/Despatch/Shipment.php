@@ -80,6 +80,90 @@ class Shipment
      */
     private $partida;
 
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $motTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $undMedPersoTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $pesoBrutoTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $nameFirtsTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $numMTCTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $numPrecinto;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $numPlacaVehiculo;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $tarjetaUnicaCirculacionVehicular;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $codigoEntidadEmisora;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $entidadEmidAutoEspecial;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $namePuerto;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $indicadorTransProgramado;
+
     /**
      * @return string
      */
@@ -339,4 +423,246 @@ class Shipment
 
         return $this;
     }
+
+
+  /**
+   * @return string
+   */
+  public function getMotTraslado()
+  {
+    return $this->motTraslado;
+  }
+
+  /**
+   * @param string $motTraslado
+   *
+   * @return Shipment
+   */
+  public function setMotTraslado($motTraslado)
+  {
+    $this->motTraslado = $motTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getUndMedPersoTraslado()
+  {
+    return $this->undMedPersoTraslado;
+  }
+
+  /**
+   * @param string $undMedPersoTraslado
+   *
+   * @return Shipment
+   */
+  public function setUndMedPersoTraslado($undMedPersoTraslado)
+  {
+    $this->undMedPersoTraslado = $undMedPersoTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getPesoBrutoTraslado()
+  {
+    return $this->pesoBrutoTraslado;
+  }
+
+  /**
+   * @param string $pesoBrutoTraslado
+   *
+   * @return Shipment
+   */
+  public function setPesoBrutoTraslado($pesoBrutoTraslado)
+  {
+    $this->pesoBrutoTraslado = $pesoBrutoTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNameFirtsTraslado()
+  {
+    return $this->pesoBrutoTraslado;
+  }
+
+  /**
+   * @param string $nameFirtsTraslado
+   *
+   * @return Shipment
+   */
+  public function setNameFirtsTraslado($nameFirtsTraslado)
+  {
+    $this->nameFirtsTraslado = $nameFirtsTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNumMTCTraslado()
+  {
+    return $this->numMTCTraslado;
+  }
+
+  /**
+   * @param string $numMTCTraslado
+   *
+   * @return Shipment
+   */
+  public function setNumMTCTraslado($numMTCTraslado)
+  {
+    $this->numMTCTraslado = $numMTCTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNumPrecinto()
+  {
+    return $this->numPrecinto;
+  }
+
+  /**
+   * @param string $numPrecinto
+   *
+   * @return Shipment
+   */
+  public function setNumPrecinto($numPrecinto)
+  {
+    $this->numPrecinto = $numPrecinto;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNumPlacaVehiculo()
+  {
+    return $this->numPlacaVehiculo;
+  }
+
+  /**
+   * @param string $numPlacaVehiculo
+   *
+   * @return Shipment
+   */
+  public function setNumPlacaVehiculo($numPlacaVehiculo)
+  {
+    $this->numPlacaVehiculo = $numPlacaVehiculo;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getTarjetaUnicaCirculacionVehicular()
+  {
+    return $this->tarjetaUnicaCirculacionVehicular;
+  }
+
+  /**
+   * @param string $tarjetaUnicaCirculacionVehicular
+   *
+   * @return Shipment
+   */
+  public function setTarjetaUnicaCirculacionVehicular($tarjetaUnicaCirculacionVehicular)
+  {
+    $this->tarjetaUnicaCirculacionVehicular = $tarjetaUnicaCirculacionVehicular;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getCodigoEntidadEmisora()
+  {
+    return $this->codigoEntidadEmisora;
+  }
+
+  /**
+   * @param string $codigoEntidadEmisora
+   *
+   * @return Shipment
+   */
+  public function setCodigoEntidadEmisora($codigoEntidadEmisora)
+  {
+    $this->codigoEntidadEmisora = $codigoEntidadEmisora;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getEntidadEmidAutoEspecial()
+  {
+    return $this->entidadEmidAutoEspecial;
+  }
+
+  /**
+   * @param string $entidadEmidAutoEspecial
+   *
+   * @return Shipment
+   */
+  public function setEntidadEmidAutoEspecial($entidadEmidAutoEspecial)
+  {
+    $this->entidadEmidAutoEspecial = $entidadEmidAutoEspecial;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNamePuerto()
+  {
+    return $this->namePuerto;
+  }
+
+  /**
+   * @param string $namePuerto
+   *
+   * @return Shipment
+   */
+  public function setNamePuerto($namePuerto)
+  {
+    $this->namePuerto = $namePuerto;
+
+    return $this;
+  }
+
+
+  /**
+   * @return string
+   */
+  public function getIndicadorTransProgramado()
+  {
+    return $this->indicadorTransProgramado;
+  }
+
+  /**
+   * @param string $indicadorTransProgramado
+   *
+   * @return Shipment
+   */
+  public function setIndicadorTransProgramado($indicadorTransProgramado)
+  {
+    $this->indicadorTransProgramado = $indicadorTransProgramado;
+
+    return $this;
+  }
 }
