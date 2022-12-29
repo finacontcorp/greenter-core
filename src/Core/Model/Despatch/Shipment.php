@@ -71,7 +71,7 @@ class Shipment
      * @var Transportist
      */
     private $transportista;
-     /**
+  /**
    * @var Transportist
    */
   private $transportistaSecundario;
@@ -167,6 +167,11 @@ class Shipment
    * @var string
    */
   private $indicadorTransProgramado;
+
+  /**
+   * @var VehiculoSecundario[]
+   */
+  private $vehiculoSecundarios;
 
     /**
      * @return string
@@ -686,6 +691,26 @@ class Shipment
   public function setIndicadorTransProgramado($indicadorTransProgramado)
   {
     $this->indicadorTransProgramado = $indicadorTransProgramado;
+
+    return $this;
+  }
+
+  /**
+   * @return VehiculoSecundario[]
+   */
+  public function getVehiculoSecundarios()
+  {
+    return $this->vehiculoSecundarios;
+  }
+
+  /**
+   * @param VehiculoSecundario[] $dvehiculoSecundarios
+   *
+   * @return Despatch
+   */
+  public function setVehiculoSecundarios($vehiculoSecundarios)
+  {
+    $this->vehiculoSecundarios = $vehiculoSecundarios;
 
     return $this;
   }
