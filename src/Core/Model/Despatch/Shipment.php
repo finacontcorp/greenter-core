@@ -71,10 +71,17 @@ class Shipment
      * @var Transportist
      */
     private $transportista;
-  /**
-   * @var Transportist
-   */
-  private $transportistaSecundario;
+
+    /**
+     * @var Transportist
+     */
+    private $transportistaSecundario;
+
+        /**
+     * @var Transportist
+     */
+    private $transportistaTercero;
+
     /**
      * @var Direction
      */
@@ -409,6 +416,23 @@ class Shipment
     public function setTransportistaSecundario($transportistaSecundario)
     {
       $this->transportistaSecundario = $transportistaSecundario;
+  
+      return $this;
+    }
+
+    public function getTransportistaTercero()
+    {
+      return $this->transportistaTercero;
+    }
+  
+    /**
+     * @param Transportist $transportistaTercero
+     *
+     * @return Shipment
+     */
+    public function setTransportistaTercero($transportistaTercero)
+    {
+      $this->transportistaTercero = $transportistaTercero;
   
       return $this;
     }
