@@ -131,6 +131,20 @@ class Shipment
    *
    * @var string
    */
+  private $entEmisoraTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
+  private $numAutorizacionTraslado;
+
+  /**
+   * Motivo del traslado.
+   *
+   * @var string
+   */
   private $numPrecinto;
 
   /**
@@ -574,6 +588,46 @@ class Shipment
   public function setNumMTCTraslado($numMTCTraslado)
   {
     $this->numMTCTraslado = $numMTCTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getEntEmisoraTraslado()
+  {
+    return $this->entEmisoraTraslado;
+  }
+
+  /**
+   * @param string $entEmisoraTraslado
+   *
+   * @return Shipment
+   */
+  public function setEntEmisoraTraslado($entEmisoraTraslado)
+  {
+    $this->entEmisoraTraslado = $entEmisoraTraslado;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getNumAutorizacionTraslado()
+  {
+    return $this->numAutorizacionTraslado;
+  }
+
+  /**
+   * @param string $numAutorizacionTraslado
+   *
+   * @return Shipment
+   */
+  public function setNumAutorizacionTraslado($numAutorizacionTraslado)
+  {
+    $this->numAutorizacionTraslado = $numAutorizacionTraslado;
 
     return $this;
   }
